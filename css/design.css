@@ -9,6 +9,7 @@ https://fonts.google.com/specimen/Alegreya+Sans+SC
 html {
     background: transparent;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body {
     min-height: 100vh;
@@ -410,7 +411,6 @@ h1 {
 
 /* フッター（削除OK） */
 footer {
-    display: none;
     margin: 5vh auto;
     color: #c8cfdd;
     font-size: 1rem;
