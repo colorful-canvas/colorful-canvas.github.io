@@ -1,0 +1,422 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
+/*
+'Alegreya Sans SC' is licensed under the Open Font License.
+https://fonts.google.com/specimen/Alegreya+Sans+SC
+*/
+
+/* 共通設定 */
+html {
+    background: transparent;
+    font-size: 62.5%;
+}
+body {
+    min-height: 100vh;
+    background: #ffffff;
+    color: #5c6981;
+    font-size: 1.3rem;
+    font-family: 'メイリオ', 'ヒラギノ角ゴ', sans-serif;
+    letter-spacing: 0.2em;
+    line-height: 180%;
+}
+a {
+    text-decoration: none;
+}
+nav,h2,h3,h4 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: normal;
+}
+h2 {
+    display: flex;
+     justify-content: center;
+     align-items: center;
+    margin: 3em .5em 2em;
+    font-size: 1.2em;
+    text-align: center;
+}
+h2::before,h2::after {
+    content: '';
+    display: inline-block;
+    margin: 0 1em;
+    width: .5em;
+    height: 1em;
+    font-size: 1.5em;
+}
+h2::before {
+    margin-bottom: .5em;
+    border-top: solid 1px #b3b3b3;
+    border-left: solid 1px #b3b3b3;
+}
+h2::after {
+    margin-top: .5em;
+    border-right: solid 1px #b3b3b3;
+    border-bottom: solid 1px #b3b3b3;
+}
+h3 {
+    display: inline-block;
+    padding: .2em 1em;
+    margin: 1em;
+    background: url('../img/design50_4.jpg') #d4eef7;
+    font-size: 1.2em;
+}
+h4 {
+    display: inline-block;
+    margin: 1em 2em;
+    border-bottom: solid 3px #f1e4ed;
+}
+ul,ol,dl {
+    list-style: none;
+}
+input[type],textarea,button,select {
+    border: none;
+    box-sizing: border-box;
+    color: inherit;
+    font-family: inherit;
+    font-size: .9em;
+    letter-spacing: .1em;
+    line-height: inherit;
+}
+.bg {
+    background: url('../img/design50_4.jpg') center / cover #d4eef7;
+}
+em {
+    background: #d7e5f5;
+    color: #000000;
+    font-style: normal;
+}
+
+
+/* 段落設定 */
+p {
+    padding: 0 2em;
+}
+section {
+    margin: 10vh 0;
+}
+section[id] {
+    scroll-margin-top: 15vh;
+    scroll-snap-margin-top: 15vh;/* safari用 */
+}
+
+
+/* 余白、基本リンク色設定 */
+.wrap {
+    position: relative;
+    padding: 10vh 3em 10vh;
+    margin: 0 auto;
+     width: 60vw;
+     min-width: 700px;
+     max-width: 1000px;
+    box-sizing: border-box;
+}
+.space {
+    margin: 5vh 2em;
+}
+
+main a {
+    color: #55b7d9;
+    transition: .3s;
+}
+.main-page a:hover {
+    color: #6393a3;
+}
+
+
+/* メインページ（小説部分）設定 */
+
+/* 長編リスト */
+.longList {
+    display: flex;
+     flex-wrap: wrap;
+     align-items: stretch;
+     align-content: stretch;
+}
+.longList li {
+    display: flex;
+    margin: 2em 5% 2em 0;
+    width: 30%;
+    background: #aeb2b9;
+    border-radius: 4px;
+    box-shadow: 2px 2px 1rem #e4e4e4;
+    overflow: hidden;
+}
+.longList li a {
+    display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+    padding: 2em 0;
+    width: 100%;
+    height: auto;
+    color: #5c6981;
+}
+.longList li:nth-of-type(3n) {
+    margin: 2em 0;
+}
+.longInfo {
+    padding: 1rem;
+    font-size: .8em;
+}
+.longTitle {
+    padding: .5em 1em;
+    background: rgba(255, 255, 255, 0.7);
+    text-align: right;
+}
+
+/* 長編画像設定 */
+#box1 {
+    background: url('../img/design50_4.jpg') center / cover #dbdfe7;
+}
+
+#box2 {
+    background: url('../img/design49_5.jpg') center / cover;
+}
+#box2 .longInfo {
+    color: #ffffff;
+}
+#box2 .longTitle {
+    color: #000000;
+    font-family: serif;
+}
+/* ↑個別にデザインを変更できます */
+
+#box3 {
+    background: url('../img/bg/bg_10.jpg') center / cover;
+}
+
+#box4 {
+    background: url('../img/design50_5.jpg') center / 150%;
+}
+#box4 .longInfo, #box4 .longTitle {
+    background: rgba(59, 50, 38, 0.8);
+    color: #d6d2cb;
+}
+
+#box5 {
+    background: url('../img/bg/bg_55.jpg') center / cover;
+}
+
+/* 名前変換フォーム */
+.nameChange {
+    text-align: center;
+}
+.nameChange input {
+
+    margin-right: 1em;
+}
+.nameChange input[type="text"] {
+    padding: .2em;
+    width: 10em;
+    border: #aeb2b9 solid 1px;
+}
+.nameChange input[type="submit"] {
+    padding: .2em 1em;
+}
+
+/* 短編リスト */
+.shortList {
+    columns: 2;
+}
+.shortList li {
+    margin: .5em 0;
+}
+.shortList li a:visited {
+    color: #9baaaf;
+}
+.shortList li > span {
+    margin: 0 1em;
+    font-size: .9em;
+}
+
+/* 小説本文 */
+.wrap-text, .wrap-text + aside {
+    margin: 0 auto;
+     width: 80%;
+     min-width: 600px;
+    line-height: 200%;
+}
+.wrap-text h4 {
+    margin-bottom: 3em;
+}
+.wrap-text + aside {
+    padding: 1em;
+    margin: 5vh auto;
+    width: 70%;
+    border: #aeb2b9 solid 1px;
+    font-size: .9em;
+}
+
+
+/* ブックマークリスト */
+.list {
+    display: flex;
+     flex-wrap: wrap;
+}
+.list li {
+    margin: 0 .5em;
+}
+
+
+/* メールフォーム */
+.mailForm input[type],.mailForm textarea {
+    margin: .5em 0;
+}
+.mailForm input[type="submit"] {
+    padding: .2em 1em;
+    background: url('../img/design50_4.jpg') #d4eef7;
+}
+.mailForm input[type="text"],.mailForm textarea {
+    padding: .2em;
+    width: 50%;
+     min-width: 400px;
+    border: solid 1px #aeb2b9;
+}
+.mailForm textarea {
+    height: 6em;
+}
+
+
+/* ヘッダー */
+.mainHeader {
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    position: relative;
+    margin: 15vh auto 10vh;
+}
+.mainHeader::before {
+    content: '';
+    display: block;
+}
+.mainHeader::before {
+    position: absolute;
+     top: -6em;
+     right: calc(50% - 2.5em);
+    width: 5em;
+    height: 5em;
+    background: url('../img/design50_4.jpg') left center / cover no-repeat #dbf5ff;
+    border-radius: 50%;
+    -webkit-mask: url('../img/design50_icon.svg') center / contain no-repeat;
+    mask: url('../img/design50_icon.svg') center / contain no-repeat;
+    transform: rotate(-30deg);
+}
+h1 {
+    padding: .5em 1em;
+    font-size: 2em;
+}
+.mainHeader > div {
+    color: #aeb2b9;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+}
+
+
+/* ナビゲーション */
+.mainNav {
+    position: sticky;
+     top: 0;
+    padding: 2rem 0;
+    width: 100%;
+    background: url('../img/design50_4.jpg') center / auto #dbf5ff;
+    box-shadow: 1px 0 1em #e4e4e4;
+    z-index: 4;
+}
+.mainNav ul {
+    display: flex;
+     justify-content: center;
+    margin: 0 auto;
+}
+.mainNav li {
+    margin: 0 .5em;
+}
+.mainNav li a {
+    padding: .5em 1em;
+    color: #384d66;
+    font-size: 1.2em;
+    transition: 0.3s ease-in-out;
+}
+.mainNav li a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #294257;
+}
+
+
+/* モバイル用CSS */
+@media (max-width:800px) {
+    body {
+        font-size: 1.1rem;
+    }
+    h4 {
+        margin: 1em;
+    }
+    p {
+        padding: 0 1em;
+    }
+    section {
+        margin: 3em 0;
+    }
+    .wrap {
+        padding: 1em 0;
+        margin: 10vh auto;
+         width: 90%;
+         max-width: 500px;
+         min-width: 200px;
+    }
+    .space {
+        margin: 2em 1em;
+    }
+    .longList {
+        flex-direction: column;
+        margin: 0 auto;
+         width: 90%;
+         max-width: 350px;
+    }
+    .longList li {
+        margin: 1em 0;
+        width: 100%;
+        overflow: hidden;
+    }
+    .longList > li:nth-of-type(even) {
+        margin: 2em 0;
+    }
+    .longList li a {
+        padding: 2rem 0;
+    }
+    .longInfo {
+        padding: 1rem 2em;
+    }
+    .shortList {
+        columns: 1;
+    }
+    .wrap-text,.wrap-text + aside {
+        width: 100%;
+        min-width: 300px;
+    }
+    .wrap-text + aside {
+        width: 70%;
+    }
+    .mailForm input[type="text"],.mailForm textarea {
+        width: 80%;
+        min-width: 200px;
+    }
+    .mainNav {
+        padding: 1rem 0;
+    }
+    .mainNav li a {
+        font-size: 1em;
+    }
+}
+
+
+/* フッター（削除OK） */
+footer {
+    display: none;
+    margin: 5vh auto;
+    color: #c8cfdd;
+    font-size: 1rem;
+    text-align: center;
+}
+footer a {
+    color: #c1cce0;
+}
+
