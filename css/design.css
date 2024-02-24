@@ -100,7 +100,7 @@ em {
     .looping-rhombuses-spinner .rhombus {
       height: 15px;
       width: 15px;
-      background-color: #ff1d5e;
+      background-color: #d7e5f5;
       left: calc(15px * 4);
       position: absolute;
       margin: 0 auto;
@@ -147,7 +147,7 @@ em {
 .loader .txt {
   font-size: 45px;
   font-weight: bold;
-  color: rgb(30, 50, 93);
+  color: #d7e5f5;
   display: none;
 }
 .loader .looping-rhombuses-spinner{
