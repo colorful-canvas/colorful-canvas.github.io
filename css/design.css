@@ -271,7 +271,7 @@ main a {
     padding: .2em 1em;
     background: url('../img/design50_4.jpg') #d4eef7;
 }
-.c-form input[type="text"],.c-form textarea,.c-form select {
+.c-form input[type="text"],.c-form textarea,.c-form select,.c-form input[type="email"] {
     padding: .2em;
     width: 50%;
     min-width: 400px;
@@ -280,7 +280,40 @@ main a {
 .c-form textarea {
     height: 6em;
 }
-
+.c-form select {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+.c-form select {
+  appearance: none;
+  padding-right: 1em;
+  border: none;
+  outline: 0;
+  background: #fff;
+  background-image: none;
+  box-shadow: none;
+  text-indent: 0.01px;
+  /* text-overflow: ellipsis; */
+  cursor: pointer;
+}
+ 
+.c-form select::before {
+  position: absolute;
+  top: 18px;
+  right: 16px;
+  width: 0;
+  height: 0;
+  border-width: 10px 5px 0 5px;
+  border-style: solid;
+  border-color: #eee transparent transparent transparent;
+  content: "";
+  pointer-events: none;
+}
+ 
+.c-form select::-ms-expand {
+  display: none;
+}
 
 /* ヘッダー */
 .mainHeader {
