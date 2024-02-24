@@ -196,22 +196,7 @@ main a {
     background: url('../img/bg/bg_55.jpg') center / cover;
 }
 
-/* 名前変換フォーム */
-.nameChange {
-    text-align: center;
-}
-.nameChange input {
 
-    margin-right: 1em;
-}
-.nameChange input[type="text"] {
-    padding: .2em;
-    width: 10em;
-    border: #aeb2b9 solid 1px;
-}
-.nameChange input[type="submit"] {
-    padding: .2em 1em;
-}
 
 /* 短編リスト */
 .shortList {
@@ -276,6 +261,7 @@ main a {
     width: 50%;
     min-width: 400px;
     border: solid 1px #aeb2b9;
+    border-radius: 3px;
 }
 .c-form textarea {
     height: 6em;
@@ -293,8 +279,9 @@ main a {
   text-indent: 0.01px;
   /* text-overflow: ellipsis; */
   cursor: pointer;
+  border-radius: 3px;
 }
-/* .c-form select::before {
+.c-form select::before {
   position: absolute;
   top: 18px;
   right: 16px;
@@ -302,10 +289,10 @@ main a {
   height: 0;
   border-width: 10px 5px 0 5px;
   border-style: solid;
-  border-color: #eee transparent transparent transparent;
+  border-color: #aeb2b9 transparent transparent transparent;
   content: "";
   pointer-events: none;
-} */
+}
 .c-form select::-ms-expand {
   display: none;
 }
