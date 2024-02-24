@@ -41,19 +41,39 @@
   align-items: center;
 }
 .loader .txt {
-  font-size: 10px;
+  font-size: 30px;
 }
 </style>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script>
 $(function () {
+  // ローダー終了
   function end_loader() {
-    $('.loader').fadeOut(800);
+    $('.loader').fadeOut(500);
   }
+  // テキスト表示
+  function show_txt() {
+    $('.loader .txt-content .txt').fadeIn(400);
+  }
+  // テキスト非表示
+  function hide_txt() {
+    $('.loader .txt-content .txt').fadeOut(400);
+  }
+
+  // タイマー処理
   $(window).on('load', function () {
+    // 処理①
+    setTimeout(function () {
+      show_txt();
+    }, 700)
+    // 処理②
+    setTimeout(function () {
+      hide_txt();
+    }, 2800)
+    // 処理③
     setTimeout(function () {
       end_loader();
-    }, 1000)
+    }, 3800)
   })
 })
 </script>
