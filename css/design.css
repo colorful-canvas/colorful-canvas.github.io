@@ -258,20 +258,26 @@ main a {
 
 
 /* メールフォーム */
-.mailForm input[type],.mailForm textarea {
+/* .c-form {
+	overflow: hidden;
+	width: 90%;
+	margin: 2em auto;
+	text-align: center;
+} */
+.c-form input[type],.c-form textarea,.c-form select {
     margin: .5em 0;
 }
-.mailForm input[type="submit"] {
+.c-form input[type="submit"] {
     padding: .2em 1em;
     background: url('../img/design50_4.jpg') #d4eef7;
 }
-.mailForm input[type="text"],.mailForm textarea {
+.c-form input[type="text"],.c-form textarea,.c-form select {
     padding: .2em;
     width: 50%;
-     min-width: 400px;
+    min-width: 400px;
     border: solid 1px #aeb2b9;
 }
-.mailForm textarea {
+.c-form textarea {
     height: 6em;
 }
 
