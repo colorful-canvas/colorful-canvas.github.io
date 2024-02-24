@@ -281,7 +281,7 @@ main a {
   cursor: pointer;
   border-radius: 3px;
 }
-.c-form select::before {
+.c-formselect::before {
   position: absolute;
   top: 18px;
   right: 16px;
@@ -293,7 +293,7 @@ main a {
   content: "";
   pointer-events: none;
 }
-.c-form select::-ms-expand {
+.c-formselect::-ms-expand {
   display: none;
 }
 
