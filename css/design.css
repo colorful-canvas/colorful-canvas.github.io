@@ -316,11 +316,7 @@ main a {
      right: calc(50% - 2.5em);
     width: 5em;
     height: 5em;
-    background: url('../img/design50_4.jpg') left center / cover no-repeat #dbf5ff;
-    border-radius: 50%;
-    -webkit-mask: url('../img/design50_icon.svg') center / contain no-repeat;
-    mask: url('../img/design50_icon.svg') center / contain no-repeat;
-    transform: rotate(-30deg);
+    background: url('../img/logo.png') left center;
 }
 h1 {
     padding: .5em 1em;
