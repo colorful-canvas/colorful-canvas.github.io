@@ -26,8 +26,7 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <body>
 <div class="loader">
- <div class="loaderanime">Let's be creative</div>
- <p class="txt">Let's be creative</p></div
+ <p class="txt">Let's be creative.</p>
 </div>
 <script>
 $(function () {
@@ -58,33 +57,17 @@ $(function () {
   font-size: 23px;
   position: relative;
   color: #fff;
-  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
-  z-index: 554;
+  text-shadow: 0px 0px 8px rgba(43, 97, 158, 1);
+  opacity: 0; /* 初めは透明に設定 */
+  transform: translateY(100%); /* 下からスライドするために位置を下に設定 */
+  animation: fadeInFromBottom 1s forwards; /* フェードインアニメーションの設定 */
 }
-.larderanime {
-    font-size: 23px;
-    z-index: 553;
-    color: #fff;
-.loaderanime::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #d7e5f5;
-  transform: scaleX(0);
-  transform-origin: bottom left;
-  animation: underlineDelay 0.15s 2 0.15s ease-in-out forwards; /* 遅延とアニメーションの設定 */
-}
-@keyframes underlineDelay {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
+@keyframes fadeInFromBottom {
+  to {
+    opacity: 1; /* アニメーション終了時に完全に表示 */
+    transform: translateY(0); /* アニメーション終了時の位置 */
   }
 }
-</style>
     
 <nav class="mainNav">
     <ul>
