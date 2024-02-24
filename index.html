@@ -17,6 +17,15 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 </head>
+<script type="text/javascript">
+    let submitted = false;
+</script>
+<iframe
+    name="hidden_iframe"
+    id="hidden_iframe"
+    style="display: none"
+    onload="if(submitted){window.location='/thanks';}"
+></iframe>
 <body>
 <nav class="mainNav">
     <ul>
@@ -58,11 +67,41 @@
 
     <section id="contact">
         <h2>contact</h2>
-        <p>何かありましたらどうぞ。</p>
-        <form class="mailForm space">
-            <input type="text" placeholder="お名前"><br>
-            <textarea placeholder="本文を入力してください。"></textarea><br>
-            <input type="submit" value="送信" class="bg">
+        <p><span style="color:#6c99cc;">*</span>が付く項目は必須項目です。</p>
+        <form
+            action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdi0WIH2CLB0lfgalOOvmJhkh8QzXrA3yMULkPtvsnVsvbPXQ/formResponse"
+            method="POST"
+            target="hidden_iframe"
+            onsubmit="submitted=true;"
+            class="c-form"
+        >
+            <label for="name">お名前<span style="color:#6c99cc;">*</span></label>
+            <p>　カラフルキャンバス！ユーザー(サーバーのメンバー)の方はDiscordのニックネームを記入してください。</p>
+            <br><input type="text" id="name" name="entry.1716094764" required><br>
+            <br><label for="user">カラフルキャンバス！ユーザーですか？<span style="color:#6c99cc;">*</span></label>
+            <br><select id="user" name="entry.2003599343" required>
+                <option>はい</option>
+                <option>いいえ</option>
+            </select>
+            <br><label for="sex">性別<span style="color:#6c99cc;">*</span></label>
+            <br><select id="sex" name="entry.753935712" required>
+                <option>男</option>
+                <option>女</option>
+                <option>その他</option>
+            </select>
+            <br><label for="mail">返信用メールアドレス</label>
+            <p>　返信が必要な場合は<a href="mailto:contact.atmark@gmail.com">contact.atmark@gmail.com</a>からのメールを許可した上でこちらにご入力ください。</p>
+            <br><input type="email" id="mail" name="entry.823042157"><br>
+            <br><label for="purpose">お問い合わせ目的<span style="color:#6c99cc;">*</span></label>
+            <br><select id="purpose" name="entry.447614755" required>
+                <option>ユーザーサポート</option>
+                <option>ユーザーの違反報告</option>
+                <option>ご意見・ご感想</option>
+                <option>その他</option>
+            </select>
+            <br><label for="text">お問い合わせ内容<span style="color:#6c99cc;">*</span></label>
+            <br><textarea id="text" name="entry.447614755></textarea><br>
+            <br><input type="submit" value="送信" class="bg">
         </form>
     </section>
 
