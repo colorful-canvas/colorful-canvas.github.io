@@ -284,11 +284,8 @@ main a {
   display: inline-block;
   position: relative;
   vertical-align: middle;
-}
-.c-form select {
   appearance: none;
   padding-right: 1em;
-  border: none;
   outline: 0;
   background: #fff;
   background-image: none;
@@ -297,8 +294,7 @@ main a {
   /* text-overflow: ellipsis; */
   cursor: pointer;
 }
- 
-.c-form select::before {
+/* .c-form select::before {
   position: absolute;
   top: 18px;
   right: 16px;
@@ -309,8 +305,7 @@ main a {
   border-color: #eee transparent transparent transparent;
   content: "";
   pointer-events: none;
-}
- 
+} */
 .c-form select::-ms-expand {
   display: none;
 }
