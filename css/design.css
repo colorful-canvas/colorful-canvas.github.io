@@ -316,7 +316,7 @@ main a {
      right: calc(50% - 2.5em);
     width: 5em;
     height: 5em;
-    background: url('../img/logo.png') left center;
+    background: url('../img/logo.png');
 }
 h1 {
     padding: .5em 1em;
@@ -413,7 +413,7 @@ h1 {
     .wrap-text + aside {
         width: 70%;
     }
-    .mailForm input[type="text"],.mailForm textarea {
+    .c-form input[type="text"],.c-form textarea,.c-form input[type="email"],.c-form select {
         width: 80%;
         min-width: 200px;
     }
