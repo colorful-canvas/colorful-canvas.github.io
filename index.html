@@ -23,10 +23,7 @@
     style="display: none"
     onload="if(submitted){window.location='/thanks';}"
 ></iframe>
-<body>
-<div class="loader">
-  <p class="txt">Let's be creative</p>
-</div>
+
 <style>
 .loader {
   position: fixed;
@@ -49,7 +46,7 @@
 $(function () {
   // ローダー終了
   function end_loader() {
-    $('.loader').fadeOut(500);
+    $('.loader').fadeOut(800);
   }
   // テキスト表示
   function show_txt() {
@@ -65,19 +62,22 @@ $(function () {
     // 処理①
     setTimeout(function () {
       show_txt();
-    }, 700)
+    }, 1000)
     // 処理②
     setTimeout(function () {
       hide_txt();
-    }, 2800)
+    }, 3500)
     // 処理③
     setTimeout(function () {
       end_loader();
-    }, 3800)
+    }, 4500)
   })
 })
 </script>
-    
+<body>
+<div class="loader">
+  <p class="txt">Let's be creative</p>
+</div>
 <nav class="mainNav">
     <ul>
         <li><a href="">top</a></li>
