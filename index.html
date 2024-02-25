@@ -75,8 +75,8 @@ $('.loader').css('height',$(window).height());
 <div class="mainNav">
 <script>
 $(function() {
-    $(".D").click(function() {
-        $(".E").slideToggle("");
+    $(".MenuButton").click(function() {
+        $(".MoreMenu").slideToggle("");
     });
 });
 </script>
@@ -87,8 +87,10 @@ $(function() {
     padding: 5px 10px;
     cursor: pointer;
 }
+.Menubutton a {
+    pointer-events: none;
+}
 .MoreMenu{
-    display: block
     background: #ffffff;
     -webkit-filter: blur(8px);
      -moz-filter: blur(8px);
@@ -102,7 +104,7 @@ $(function() {
         <li><a href="#about">about</a></li>
         <li><a href="#operation">operation</a></li>
         <li><a href="#contact">contact</a></li>
-        <li class="MenuButton">more</li>
+        <li><a href="#" class="MenuButton">more</a></li>
     </ul>
 </div>
 <div class="MoreMenu">
