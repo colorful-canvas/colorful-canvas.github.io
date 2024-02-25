@@ -23,7 +23,7 @@
     style="display: none"
     onload="if(submitted){window.location='/thanks';}"
 ></iframe>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery.min.js"></script>
 <body>
 <div class="loader">
  <p class="txt">Let's be creative.</p>
@@ -72,14 +72,44 @@ $('.loader').css('height',$(window).height());
 }
 </style>
     
-<nav class="mainNav">
+<div class="mainNav">
+<script>
+$(function() {
+    $(".D").click(function() {
+        $(".E").slideToggle("");
+    });
+});
+</script>
+<style>
+.MenuButton{
+    display: inline-block;
+    background: #b6beff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.MoreMenu{
+    display: block
+    background: #ffffff;
+    -webkit-filter: blur(8px);
+     -moz-filter: blur(8px);
+      -ms-filter: blur(8px);
+          filter: blur(8px);
+    height: 100px;
+}
+</style>
     <ul>
         <li><a href="#">top</a></li>
         <li><a href="#about">about</a></li>
         <li><a href="#operation">operation</a></li>
         <li><a href="#contact">contact</a></li>
+        <li class="MenuButton">more</li>
     </ul>
-</nav>
+</div>
+<div class="MoreMenu">
+    <ul>
+        <li>aiueo</li>
+        <li>kakikukeko</li>
+    </ul>
 
 <div class="wrap">
 <header class="mainHeader">
