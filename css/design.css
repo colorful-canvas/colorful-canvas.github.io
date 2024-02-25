@@ -57,7 +57,7 @@ h3 {
     display: inline-block;
     padding: .2em 1em;
     margin: 1em;
-    background: url('../img/design50_4.jpg') #d4eef7;
+    background: url('../img/paper.png') #d4eef7;
     font-size: 1.2em;
 }
 h4 {
@@ -78,7 +78,7 @@ input[type],textarea,button,select {
     line-height: inherit;
 }
 .bg {
-    background: url('../img/design50_4.jpg') center / cover #d4eef7;
+    background: url('../img/paper.png') center / cover #d4eef7;
 }
 em {
     background: #d7e5f5;
@@ -165,7 +165,7 @@ main a {
 
 /* 長編画像設定 */
 #box1 {
-    background: url('../img/design50_4.jpg') center / cover #dbdfe7;
+    background: url('../img/paper.png') center / cover #dbdfe7;
 }
 
 #box2 {
@@ -254,7 +254,7 @@ main a {
 }
 .c-form input[type="submit"] {
     padding: .2em 1em;
-    background: url('../img/design50_4.jpg') #d4eef7;
+    background: url('../img/paper.png') #d4eef7;
 }
 .c-form input[type="text"],.c-form textarea,.c-form select,.c-form input[type="email"] {
     padding: .2em;
@@ -328,7 +328,7 @@ h1 {
      top: 0;
     padding: 2rem 0;
     width: 100%;
-    background: url('../img/design50_4.jpg') center / auto #dbf5ff;
+    background: url('../img/paper.png') center / auto #dbf5ff;
     box-shadow: 1px 0 1em #e4e4e4;
     z-index: 4;
 }
@@ -429,4 +429,3 @@ footer {
 footer a {
     color: #c1cce0;
 }
-
