@@ -71,8 +71,8 @@ $('.loader').css('height',$(window).height());
   }
 }
 </style>
-    
-<div class="mainNav">
+
+<!-- メニューアニメーション -->
 <script>
 $(function() {
     $(".MenuButton").click(function() {
@@ -81,16 +81,11 @@ $(function() {
 });
 </script>
 <style>
-.MenuButton{
-    display: inline-block;
-    background: #b6beff;
-    padding: 5px 10px;
-    cursor: pointer;
-}
 .Menubutton a {
     pointer-events: none;
 }
 .MoreMenu{
+    display: block;
     background: #ffffff;
     -webkit-filter: blur(8px);
      -moz-filter: blur(8px);
@@ -99,6 +94,9 @@ $(function() {
     height: 100px;
 }
 </style>
+
+<!-- メニュー -->
+<div class="mainNav">
     <ul>
         <li><a href="#">top</a></li>
         <li><a href="#about">about</a></li>
@@ -108,11 +106,9 @@ $(function() {
     </ul>
 </div>
 <div class="MoreMenu">
-    <ul>
-        <li>aiueo</li>
-        <li>kakikukeko</li>
-    </ul>
-
+    テストの分だよぉぉぉぉぉ
+</div>
+    
 <div class="wrap">
 <header class="mainHeader">
     <h1>カラフルキャンバス！</h1>
