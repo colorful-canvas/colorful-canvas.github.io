@@ -310,14 +310,7 @@ main a {
     content: '';
     display: block;
 }
-.mainHeader::before {
-    position: absolute;
-     top: -6em;
-     right: calc(50% - 2.5em);
-    width: 5em;
-    height: 5em;
-    background: url('../img/logo.png');
-}
+
 h1 {
     padding: .5em 1em;
     font-size: 2em;
